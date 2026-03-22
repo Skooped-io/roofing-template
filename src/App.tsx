@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
