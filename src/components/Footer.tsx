@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { seoConfig } from "@/lib/config";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
             APEX<span className="text-primary">ROOFING</span>
           </h3>
           <p className="text-sm leading-relaxed text-secondary-foreground/70">
-            Trusted roofing contractor serving the greater metro area since 2003. Licensed, insured, and committed to quality craftsmanship.
+            Trusted {seoConfig.industry.toLowerCase()} contractor serving the greater metro area since {seoConfig.yearEstablished}. Licensed, insured, and committed to quality craftsmanship.
           </p>
         </div>
         <div>
@@ -26,20 +27,20 @@ export function Footer() {
         <div>
           <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-secondary-foreground/50">Contact</h4>
           <div className="flex flex-col gap-3 text-sm text-secondary-foreground/70">
-            <a href="tel:5551234567" className="flex items-center gap-2 hover:text-primary">
-              <Phone className="h-4 w-4 text-primary" /> (555) 123-4567
+            <a href={`tel:${seoConfig.phoneRaw}`} className="flex items-center gap-2 hover:text-primary">
+              <Phone className="h-4 w-4 text-primary" /> {seoConfig.phone}
             </a>
-            <a href="mailto:info@apexroofing.com" className="flex items-center gap-2 hover:text-primary">
-              <Mail className="h-4 w-4 text-primary" /> info@apexroofing.com
+            <a href={`mailto:${seoConfig.email}`} className="flex items-center gap-2 hover:text-primary">
+              <Mail className="h-4 w-4 text-primary" /> {seoConfig.email}
             </a>
             <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-primary" /> 123 Main St, Springfield, IL
+              <MapPin className="h-4 w-4 text-primary" /> {seoConfig.address.full}
             </span>
           </div>
         </div>
       </div>
       <div className="border-t border-secondary-foreground/10 py-6 text-center text-xs text-secondary-foreground/40">
-        © {new Date().getFullYear()} Apex Roofing. All rights reserved. | License #RCC-123456
+        © {new Date().getFullYear()} {seoConfig.businessName}. All rights reserved. | License #{seoConfig.licenseNumber}
       </div>
     </footer>
   );

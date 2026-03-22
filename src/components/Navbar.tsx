@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { seoConfig } from "@/lib/config";
 
 const links = [
   { to: "/", label: "Home" },
@@ -41,9 +42,9 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a href="tel:5551234567" className="flex items-center gap-2 text-sm font-bold text-secondary-foreground">
+          <a href={`tel:${seoConfig.phoneRaw}`} className="flex items-center gap-2 text-sm font-bold text-secondary-foreground">
             <Phone className="h-4 w-4 text-primary" />
-            (555) 123-4567
+            {seoConfig.phone}
           </a>
           <Link to="/contact">
             <Button variant="hero" size="default">Free Estimate</Button>
@@ -70,9 +71,9 @@ export function Navbar() {
             </Link>
           ))}
           <div className="mt-4 flex flex-col gap-3">
-            <a href="tel:5551234567" className="flex items-center gap-2 text-sm font-bold text-secondary-foreground">
+            <a href={`tel:${seoConfig.phoneRaw}`} className="flex items-center gap-2 text-sm font-bold text-secondary-foreground">
               <Phone className="h-4 w-4 text-primary" />
-              (555) 123-4567
+              {seoConfig.phone}
             </a>
             <Link to="/contact" onClick={() => setOpen(false)}>
               <Button variant="hero" className="w-full">Free Estimate</Button>
