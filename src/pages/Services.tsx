@@ -3,7 +3,7 @@ import { Wrench, Home, HardHat, CloudRain, Search, Building2 } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { PageSEO } from "@/components/PageSEO";
-import { seoConfig, getImage } from "@/lib/config";
+import { seoConfig, getImage, slugify } from "@/lib/config";
 import heroImg from "@/assets/hero-roofing.jpg";
 import completedImg from "@/assets/completed-roof.jpg";
 import stormImg from "@/assets/storm-damage.jpg";
