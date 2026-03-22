@@ -3,7 +3,7 @@ import { Wrench, Home, HardHat, CloudRain, Search, Building2 } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { PageSEO } from "@/components/PageSEO";
-import { seoConfig, getImage } from "@/lib/config";
+import { seoConfig, getImage, slugify } from "@/lib/config";
 import heroImg from "@/assets/hero-roofing.jpg";
 import completedImg from "@/assets/completed-roof.jpg";
 import stormImg from "@/assets/storm-damage.jpg";
@@ -39,9 +39,14 @@ export default function Services() {
                     </div>
                     <h2 className="text-2xl font-black text-foreground lg:text-3xl">{s.title}</h2>
                     <p className="mt-4 leading-relaxed text-muted-foreground">{s.longDesc}</p>
-                    <Link to="/contact" className="mt-6 inline-block">
-                      <Button variant="hero" size="lg">Get a Free Estimate for {s.title}</Button>
-                    </Link>
+                    <div className="mt-6 flex flex-wrap items-center gap-3">
+                      <Link to={`/services/${slugify(s.title)}`}>
+                        <Button variant="heroOutline" size="lg">Learn More</Button>
+                      </Link>
+                      <Link to="/contact">
+                        <Button variant="hero" size="lg">Get a Free Estimate</Button>
+                      </Link>
+                    </div>
                   </div>
                   <div className={i % 2 !== 0 ? "lg:order-1" : ""}>
                     <img src={getImage(null, s.imageSlot, fallbackImg)} alt={s.title} className="rounded-lg shadow-lg" />
