@@ -1,0 +1,142 @@
+{
+  "businessName": "Apex Roofing",
+  "phone": "(555) 123-4567",
+  "phoneRaw": "5551234567",
+  "email": "info@apexroofing.com",
+  "address": {
+    "street": "123 Main St",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62701",
+    "full": "123 Main St, Springfield, IL 62701"
+  },
+  "serviceArea": "Central Illinois",
+  "serviceAreaCities": ["Springfield", "Decatur", "Champaign", "Bloomington", "Jacksonville", "Lincoln", "Taylorville", "Chatham"],
+  "industry": "Roofing",
+  "yearEstablished": "2003",
+  "licenseNumber": "RCC-123456",
+  "founderName": "Mike Harmon",
+  "about": "Founded in 2003 by Mike Harmon, Apex Roofing started as a two-man crew with a simple promise: do honest work at a fair price. Over two decades later, that promise hasn't changed — but our team has grown to over 40 skilled tradespeople serving central Illinois.",
+  "aboutExtra": "We've completed more than 5,000 roofing projects, from small leak repairs to full commercial installations. Every job gets the same attention to detail, because your home is your biggest investment.",
+  "mission": "To protect every home and business we serve with roofing solutions that are built to last — delivered with honesty, professionalism, and respect for your property.",
+  "hours": "Mon–Fri 7AM–6PM | Sat 8AM–2PM",
+  "tagline": "Built on integrity. Backed by two decades of experience.",
+  "services": [
+    {
+      "title": "Roof Repair",
+      "shortDesc": "Fast, reliable repairs for leaks, missing shingles, and weather damage.",
+      "longDesc": "From minor leaks to significant damage, our repair services restore the integrity of your roof quickly and affordably. We work with all shingle types, flashing, and ventilation systems.",
+      "icon": "Wrench",
+      "imageSlot": "service_repair"
+    },
+    {
+      "title": "Roof Replacement",
+      "shortDesc": "Complete tear-off and replacement with premium materials and warranty.",
+      "longDesc": "When repairs aren't enough, our full replacement service includes a complete tear-off, deck inspection, and installation of premium materials backed by manufacturer warranties.",
+      "icon": "Home",
+      "imageSlot": "service_replacement"
+    },
+    {
+      "title": "New Construction",
+      "shortDesc": "Expert installation for new construction projects of any size.",
+      "longDesc": "Building a new home or commercial property? We partner with builders and homeowners to deliver expertly installed roofing systems for projects of any scale.",
+      "icon": "HardHat",
+      "imageSlot": "service_new"
+    },
+    {
+      "title": "Storm Damage Repair",
+      "shortDesc": "Emergency response and insurance claim assistance after storms.",
+      "longDesc": "After severe weather, we provide emergency tarping, full damage assessment, and work directly with your insurance company to streamline the claims process.",
+      "icon": "CloudRain",
+      "imageSlot": "service_storm"
+    },
+    {
+      "title": "Roof Inspections",
+      "shortDesc": "Thorough roof inspections with detailed reports and recommendations.",
+      "longDesc": "Our certified inspectors provide detailed reports on your roof's condition, remaining lifespan, and any areas of concern — ideal for home sales or annual maintenance.",
+      "icon": "Search",
+      "imageSlot": "service_inspection"
+    },
+    {
+      "title": "Commercial Roofing",
+      "shortDesc": "Flat roof, TPO, EPDM, and metal solutions for commercial buildings.",
+      "longDesc": "We specialize in flat roof systems including TPO, EPDM, and modified bitumen, as well as metal roofing solutions for warehouses, offices, and retail buildings.",
+      "icon": "Building2",
+      "imageSlot": "service_commercial"
+    }
+  ],
+  "serviceOptions": ["Roof Repair", "Roof Replacement", "New Installation", "Storm Damage", "Inspection", "Commercial Roofing", "Other"],
+  "testimonials": [
+    { "name": "Robert & Lisa M.", "city": "Springfield, IL", "quote": "Apex replaced our entire roof in two days. The crew was professional, cleaned up everything, and the price was exactly what they quoted. Couldn't be happier." },
+    { "name": "Patricia K.", "city": "Decatur, IL", "quote": "After the hailstorm, Apex was the first company to respond. They handled everything with our insurance and made the process completely stress-free." },
+    { "name": "James T.", "city": "Champaign, IL", "quote": "We got four estimates and Apex wasn't the cheapest — but they were the most thorough. Two years later, not a single issue. Worth every penny." }
+  ],
+  "trustItems": ["Licensed & Insured", "5-Star Rated", "20+ Years Experience", "Free Estimates"],
+  "whyChooseUs": [
+    "Licensed & fully insured — protecting you and your property",
+    "Free detailed estimates with transparent, upfront pricing",
+    "Lifetime workmanship warranty on every project",
+    "24/7 emergency storm damage service"
+  ],
+  "team": [
+    { "name": "Mike Harmon", "role": "Founder & CEO", "initials": "MH" },
+    { "name": "Sandra Chen", "role": "Operations Manager", "initials": "SC" },
+    { "name": "Dave Rodriguez", "role": "Lead Foreman", "initials": "DR" }
+  ],
+  "certifications": ["GAF Certified", "CertainTeed SELECT", "Owens Corning Preferred", "BBB A+ Rated", "OSHA Compliant", "EPA Lead-Safe Certified"],
+  "process": [
+    { "step": "1", "title": "Inspection", "desc": "We perform a thorough assessment of your roof's condition." },
+    { "step": "2", "title": "Estimate", "desc": "You receive a detailed, transparent quote — no hidden fees." },
+    { "step": "3", "title": "Build", "desc": "Our skilled crew completes the work on schedule with premium materials." },
+    { "step": "4", "title": "Final Walkthrough", "desc": "We walk the project together to ensure your complete satisfaction." }
+  ],
+  "faqs": [
+    { "q": "How long does a roof replacement take?", "a": "Most residential roof replacements take 1–3 days, depending on the size, complexity, and weather. We'll give you a specific timeline during your free estimate." },
+    { "q": "Do you offer financing?", "a": "Yes. We partner with several financing providers to offer flexible payment plans with competitive rates. Ask us during your consultation for details." },
+    { "q": "What roofing materials do you use?", "a": "We install asphalt shingles (architectural and 3-tab), metal roofing, cedar shakes, and flat roof systems (TPO, EPDM). We carry products from GAF, CertainTeed, and Owens Corning." },
+    { "q": "Will my insurance cover storm damage?", "a": "In most cases, yes. We work directly with your insurance adjuster and provide all necessary documentation, photos, and estimates to support your claim." },
+    { "q": "How do I know if I need a repair or full replacement?", "a": "We'll perform a free inspection and give you an honest recommendation. If your roof is under 15 years old with localized damage, a repair is usually sufficient. Widespread issues often call for replacement." },
+    { "q": "What warranties do you offer?", "a": "All our work comes with a lifetime workmanship warranty. Material warranties vary by manufacturer — typically 25–50 years for architectural shingles." },
+    { "q": "Do you handle permits and inspections?", "a": "Absolutely. We pull all required permits and schedule municipal inspections. It's all included in your project cost." },
+    { "q": "Can you work on commercial buildings?", "a": "Yes. We specialize in flat roof systems for commercial properties including TPO, EPDM, and modified bitumen membranes." },
+    { "q": "How often should I have my roof inspected?", "a": "We recommend annual inspections, especially after severe weather. Regular inspections catch small issues before they become expensive problems." },
+    { "q": "Are you licensed and insured?", "a": "Yes. We carry full general liability insurance, workers' compensation, and hold a valid roofing contractor license (RCC-123456)." }
+  ],
+  "gallery": [
+    { "title": "Colonial Roof Replacement", "location": "Springfield, IL", "type": "Residential", "desc": "Full tear-off and architectural shingle installation", "imageSlot": "gallery_1" },
+    { "title": "New Construction Install", "location": "Champaign, IL", "type": "Residential", "desc": "Complete roofing system for new 4-bedroom build", "imageSlot": "gallery_2" },
+    { "title": "Hail Damage Restoration", "location": "Decatur, IL", "type": "Storm Damage", "desc": "Emergency repair and full replacement after severe hailstorm", "imageSlot": "gallery_3" },
+    { "title": "Ranch Home Re-Roof", "location": "Bloomington, IL", "type": "Residential", "desc": "Premium dimensional shingles with improved ventilation", "imageSlot": "gallery_4" },
+    { "title": "Warehouse TPO System", "location": "Springfield, IL", "type": "Commercial", "desc": "20,000 sq ft TPO membrane installation", "imageSlot": "gallery_5" },
+    { "title": "Wind Damage Repair", "location": "Jacksonville, IL", "type": "Storm Damage", "desc": "Partial replacement after tornado-force winds", "imageSlot": "gallery_6" },
+    { "title": "Office Complex Re-Roof", "location": "Lincoln, IL", "type": "Commercial", "desc": "Multi-section commercial flat roof replacement", "imageSlot": "gallery_7" },
+    { "title": "Victorian Home Restoration", "location": "Chatham, IL", "type": "Residential", "desc": "Period-appropriate cedar shake and slate accents", "imageSlot": "gallery_8" }
+  ],
+  "seo": {
+    "home": {
+      "title": "Apex Roofing | Roofing Contractor in Springfield, IL",
+      "description": "Trusted roofing contractor serving central Illinois. Roof repair, replacement, and new installation. Licensed & insured. Free estimates. Call (555) 123-4567.",
+      "h1": "Your Trusted Roofing Experts."
+    },
+    "about": {
+      "title": "About Apex Roofing | Springfield, IL",
+      "description": "Learn about Apex Roofing — over 20 years of trusted roofing service in central Illinois. Licensed, insured, and committed to quality craftsmanship."
+    },
+    "services": {
+      "title": "Roofing Services | Apex Roofing",
+      "description": "Comprehensive roofing services including repair, replacement, new installation, storm damage, inspections, and commercial roofing in Springfield, IL."
+    },
+    "gallery": {
+      "title": "Our Work | Apex Roofing Portfolio",
+      "description": "Browse completed roofing projects by Apex Roofing — residential, commercial, and storm damage restoration across central Illinois."
+    },
+    "faq": {
+      "title": "Roofing FAQ | Apex Roofing",
+      "description": "Answers to common roofing questions — timelines, materials, warranties, insurance, and more from Apex Roofing in Springfield, IL."
+    },
+    "contact": {
+      "title": "Contact Apex Roofing | Free Estimates in Springfield, IL",
+      "description": "Request a free roofing estimate from Apex Roofing. Call (555) 123-4567 or fill out our contact form. Serving central Illinois."
+    }
+  }
+}

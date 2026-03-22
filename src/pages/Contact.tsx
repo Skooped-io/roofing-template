@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
-
-const serviceOptions = ["Roof Repair", "Roof Replacement", "New Installation", "Storm Damage", "Inspection", "Commercial Roofing", "Other"];
+import { PageSEO } from "@/components/PageSEO";
+import { seoConfig } from "@/lib/config";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,6 +15,8 @@ export default function Contact() {
 
   return (
     <div>
+      <PageSEO page="contact" />
+
       <section className="bg-secondary py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-black text-secondary-foreground lg:text-5xl">Contact Us</h1>
@@ -48,7 +50,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label className="mb-1.5 block text-sm font-semibold text-card-foreground">Phone *</label>
-                    <input required type="tel" className="w-full rounded-lg border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary" placeholder="(555) 000-0000" />
+                    <input required type="tel" className="w-full rounded-lg border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary" placeholder={seoConfig.phone} />
                   </div>
                 </div>
                 <div>
@@ -57,13 +59,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <label className="mb-1.5 block text-sm font-semibold text-card-foreground">Address</label>
-                  <input type="text" className="w-full rounded-lg border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary" placeholder="123 Main St, Springfield, IL" />
+                  <input type="text" className="w-full rounded-lg border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary" placeholder={`123 Main St, ${seoConfig.address.city}, ${seoConfig.address.state}`} />
                 </div>
                 <div>
                   <label className="mb-1.5 block text-sm font-semibold text-card-foreground">Service Needed</label>
                   <select className="w-full rounded-lg border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary">
                     <option value="">Select a service</option>
-                    {serviceOptions.map((o) => <option key={o} value={o}>{o}</option>)}
+                    {seoConfig.serviceOptions.map((o) => <option key={o} value={o}>{o}</option>)}
                   </select>
                 </div>
                 <div>
@@ -81,10 +83,10 @@ export default function Contact() {
               <h2 className="text-xl font-black text-foreground">Get In Touch</h2>
               <div className="space-y-4">
                 {[
-                  { icon: Phone, label: "(555) 123-4567", href: "tel:5551234567" },
-                  { icon: Mail, label: "info@apexroofing.com", href: "mailto:info@apexroofing.com" },
-                  { icon: MapPin, label: "123 Main St, Springfield, IL 62701" },
-                  { icon: Clock, label: "Mon–Fri 7AM–6PM | Sat 8AM–2PM" },
+                  { icon: Phone, label: seoConfig.phone, href: `tel:${seoConfig.phoneRaw}` },
+                  { icon: Mail, label: seoConfig.email, href: `mailto:${seoConfig.email}` },
+                  { icon: MapPin, label: seoConfig.address.full },
+                  { icon: Clock, label: seoConfig.hours },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-3">
                     <item.icon className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
@@ -97,7 +99,7 @@ export default function Contact() {
                 ))}
               </div>
               <div className="rounded-lg border bg-muted/50 p-4">
-                <p className="text-xs font-semibold text-muted-foreground">License #RCC-123456 | Fully Licensed & Insured</p>
+                <p className="text-xs font-semibold text-muted-foreground">License #{seoConfig.licenseNumber} | Fully Licensed & Insured</p>
               </div>
 
               {/* Map placeholder */}
